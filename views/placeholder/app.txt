@@ -1,0 +1,74 @@
+// SYSTEM
+
+router.get('/home',function(req,res){
+  res.sendFile(path.join(__dirname, './system','/home.html'));
+});
+
+router.get('/about',function(req,res){
+  res.sendFile(path.join(__dirname, './system','/about.html'));
+});
+
+router.get('/dashboard',function(req,res){
+  res.sendFile(path.join(__dirname, './system', '/dashboard.html'));
+});
+
+router.get
+('/settings',function(req,res){
+  res.sendFile(path.join(__dirname, './system', 'settings.html'))
+});
+
+router.get('/sitemap',function(req,res){
+  res.sendFile(path.join(__dirname, './system','/sitemap.html'));
+});
+
+router.get('/test',function(req,res){
+  res.sendFile(path.join(__dirname, './system', 'test.html'))
+});
+
+//LANDING 
+
+router.get('/promo',function(req,res){
+  res.sendFile(path.join(__dirname, './promo', 'index.html'))
+});
+
+// STUDENT
+
+  router.get('/account',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'account.html'))
+  });
+
+  router.get('/class',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'class.html'))
+  });
+
+  router.get('/cockpit',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'cockpit.html'))
+  });
+
+  router.get('/communication',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'communication.html'))
+  });
+
+  router.get('/progress',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'progress.html'))
+  });
+
+  router.get('/registration',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'registration.html'))
+  });
+
+  router.get('/schedule',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'schedule.html'))
+  });
+
+  router.get('/social',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'social.html'))
+  });
+
+  router.get('/storage',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'storage.html'))
+  });
+
+  router.get('/videos',function(req,res){
+    res.sendFile(path.join(__dirname, './student', 'videos.html'))
+  });
